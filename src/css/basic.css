@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+    min-height: 100dvh;
+    font-size: 1.2rem;
+}
+
+main {
+    width: clamp(450px, 90%, 650px);
+    min-height: 50dvh;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #eee;
+}
+
+i {
+    background-color: purpe;
+}
+
+h1,
+h2 {
+    margin: 20px auto;
+    text-align: center;
+    color: purple;
+}
+
+h2 {
+    font-weight: 300;
+}

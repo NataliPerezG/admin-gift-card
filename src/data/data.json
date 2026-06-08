@@ -1,0 +1,23 @@
+[
+    {
+        "id": "0",
+        "gift": "spotify premium",
+        "tipo": "Suscripción",
+        "tiempo": "1 mes",
+        "precio": "250"
+    },
+    {
+        "id": "1",
+        "gift": "hbo",
+        "tipo": "Compra",
+        "tiempo": "1 mes",
+        "precio": "350"
+    },
+    {
+        "id": "2",
+        "gift": "netflix",
+        "tipo": "Suscripción",
+        "tiempo": "3 mes",
+        "precio": "200"
+    }
+]

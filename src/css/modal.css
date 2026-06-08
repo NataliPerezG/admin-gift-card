@@ -1,0 +1,40 @@
+dialog {
+    position: fixed;
+    margin: 20dvh auto;
+    width: clamp(300px, 45dvw, 500px);
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+dialog::backdrop {
+    background-color: rgba(71, 22, 85, 0.25);
+    backdrop-filter: blur(1px);
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.reset {
+    background-color: rgb(212, 75, 30);
+    color: wheat;
+    transition: transform 500ms ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.accept {
+    background-color: rgb(5, 91, 71);
+    color: wheat;
+    transition: transform 500ms ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

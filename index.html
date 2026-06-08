@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer type="module" src="/src/main.js"></script>
+  <title>Admin Gift Card</title>
+</head>
+
+<body>
+
+  <h1>Administración</h1>
+
+
+  <main>
+
+    <h2>Agregar Nueva Gift Card</h2>
+
+    <form class="form">
+
+      <div class="section-one">
+
+        <div class="container">
+          <label for="gift">Gift</label>
+          <input id="gift" type="text" autofocus>
+        </div>
+
+        <div class="container">
+          <label for="type">Tipo</label>
+          <select id="type">
+            <option value="Suscripción">Suscripción</option>
+            <option value="Compra">Compra</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="section-two">
+
+        <div class="container">
+          <label for="month">Tiempo</label>
+          <select id="month">
+            <option value="1 mes">1 Mes</option>
+            <option value="2 meses">2 Mes</option>
+            <option value="3 meses">3 Mes</option>
+          </select>
+        </div>
+
+        <div class="container">
+          <label for="price">Precio</label>
+          <input id="price" type="number" step="50">
+        </div>
+      </div>
+
+      <button class="button submit" type="submit">Guardar</button>
+    </form>
+
+    <h2>Tabla de Contenido</h2>
+
+    <dialog>
+      <form class="form-modal">
+
+        <div class="section-one">
+          <div class="container">
+            <label for="gift">Gift</label>
+            <input id="gift" class="gift-modal" type="text" autofocus>
+          </div>
+          <div class="container">
+            <label for="type">Tipo</label>
+            <select id="type" class="type-modal">
+              <option value="Suscripción">Suscripción</option>
+              <option value="Compra">Compra</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-two">
+          <div class="container">
+            <label for="month">Tiempo</label>
+            <select id="month" class="month-modal">
+              <option value="1 mes">1 Mes</option>
+              <option value="2 meses">2 Mes</option>
+              <option value="3 meses">3 Mes</option>
+            </select>
+          </div>
+          <div class="container">
+            <label for="price">Precio</label>
+            <input id="price" type="number" step="50" class="price-modal">
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="reset" class="button reset">Cancelar</button>
+          <button class="button accept" type="submit">Aceptar</button>
+        </div>
+      </form>
+    </dialog>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Gift</th>
+          <th>Tipo</th>
+          <th>Precio</th>
+          <th>Tiempo</th>
+          <th>Editar</th>
+          <th>Borrar</th>
+
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <template id="template">
+          <tr class="cardGift" data-id>
+            <td class="cardName">Netflix</td>
+            <td class="cardType">compra</td>
+            <td class="cardPrice">500</td>
+            <td class="cardTime">1 Mes</td>
+            <td class="edit"><i class="fa-solid fa-pen-to-square"></i></td>
+            <td class="delete"><i class="fa-solid fa-trash"></i></td>
+          </tr>
+        </template>
+      </tbody>
+    </table>
+
+  </main>
+
+</body>
+
+</html>
